@@ -1,0 +1,10 @@
+{
+  "name": "pointscope-codex",
+  "version": "1.0.2",
+  "private": true,
+  "description": "Source tooling for PointScope; the installed plugin has no package/runtime dependency.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}

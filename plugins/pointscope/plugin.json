@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pointscope",
+  "version": "1.0.2",
+  "description": "在 Codex 内圈定前端修改范围、演示笔迹、连接文件，并交给当前对话理解和实现。无需额外运行时、网关或 API Key。",
+  "keywords": ["frontend", "annotations", "visual-editing", "workflow"],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "onboardingSkill": "./skills/pointscope/SKILL.md",
+      "interface": {
+        "displayName": "PointScope",
+        "shortDescription": "圈选、笔迹与文件，直接交给 Codex",
+        "longDescription": "复用项目预览和 Codex 内置浏览器，将影响范围、样式、输入响应、笔迹和连线文件打包为修改上下文。使用原生批注及只读 Site tools 交接，无独立模型服务。",
+        "developerName": "PointScope",
+        "category": "Productivity",
+        "capabilities": ["Interactive", "Read", "Write"],
+        "brandColor": "#087F70",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "defaultPrompt": ["用 PointScope 打开当前项目预览，我想圈选位置、连接素材，然后让 Codex 修改前端。"]
+      }
+    }
+  }
+}

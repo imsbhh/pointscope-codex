@@ -1,0 +1,6 @@
+interface:
+  display_name: "PointScope"
+  short_description: "把圈选范围、演示笔迹和素材用途整理后，交给当前 Codex 对话实现前端修改"
+  default_prompt: "使用 $pointscope 打开当前前端项目的可视编辑入口，将我圈选的位置和连接的文件整理为修改需求。"
+policy:
+  allow_implicit_invocation: true
